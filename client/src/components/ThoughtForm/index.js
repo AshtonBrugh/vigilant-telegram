@@ -56,14 +56,14 @@ const ThoughtForm = () => {
     return (
         <div>
             <p className={`m-0 ${characterCount === 280 ? 'text-error' : ''}`}>
-                Character Count: {characterCount}/280 <br />
+                {characterCount}/280 <br />
                 {error && <span className="text-error"> Something went wrong... </span>}
             </p>
 
-            <form className="flex-row justify-center justify-space-between-md align-stretch"
+            <form className="flex-column justify-center justify-space-between-md align-stretch"
                 onSubmit={handleFormSubmit}>
                 <textarea
-                placeholder="Here's a new thought..."
+                placeholder="What's on your mind?"
                 value={thoughtText}
                 className="form-input col-12 col-md-9"
                 onChange={handleChange}>

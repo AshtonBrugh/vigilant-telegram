@@ -26,7 +26,7 @@ const loggedIn = Auth.loggedIn();
           {loading ? ( 
             <div>Loading...</div>
         ) : (
-          <ThoughtList thoughts={thoughts} title="Some Feed for Thought(s).." />
+          <ThoughtList thoughts={thoughts}/>
         )}
         </div>
         {loggedIn && userData ? (

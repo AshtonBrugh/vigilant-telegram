@@ -1,11 +1,12 @@
 :root {
-  --primary: #497573;
-  --secondary: #99f7f2;
+  --primary: #80b918;
+  --secondary: #09bc8a;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
-  --dark: #6c7575;
+  --dark: black;
   --error: rgb(228, 46, 1);
+  --rose: #ff006e;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -26,12 +27,13 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
   font-weight: 400;
   line-height: 1.5;
   font-size: 20px;
-  color: var(--dark);
+  color: var(--light);
   background-color: #f3fffee1;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
 h1,
@@ -40,8 +42,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
+  font-family: 'Koulen', cursive;
+  font-weight: 800;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -56,6 +58,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  color:var(--primary);
 }
 
 h4 {
@@ -64,6 +67,8 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  color:var(--primary);
+
 }
 
 h6 {
@@ -73,6 +78,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: #007200;
 }
 
 a {
@@ -97,7 +103,11 @@ nav a {
 
 nav a:hover {
   color: var(--secondary);
-  background-color: var(--dark);
+  background-color: var(--primary);
+}
+
+textarea {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .page-title {
@@ -109,23 +119,25 @@ nav a:hover {
 
 .btn,
 .pill {
+  font-family: 'Koulen', cursive;
   font-size: 1.3rem;
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
   margin: 5px 0;
   border-radius: var(--border-radius);
-  border: none;
-  color: var(--dark);
+  border: black solid 2px;
+  color: var(--light);
   outline: none;
   background-color: var(--secondary);
   transition: all 0.5s;
+  width: 15%;
 }
 
 .btn:hover,
 .pill:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  color: var(--light);
+  background-color: #2d6a4f;
 }
+
 
 .btn-inline {
   display: inline;
@@ -141,9 +153,9 @@ nav a:hover {
 }
 
 .card-header {
-  color: var(--secondary);
+  color: white;
   margin: 0;
-  background-color: var(--dark);
+  background-color: #80b918;
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
@@ -158,6 +170,8 @@ nav a:hover {
 .form-input,
 .form-textarea {
   display: block;
+  font-family:'Josefin Sans', sans-serif;
+
 }
 
 .form-label {
@@ -752,7 +766,7 @@ nav a:hover {
 }
 
 .text-secondary {
-  color: var(--secondary);
+  color: var(--light);
 }
 
 .text-tertiary {
@@ -781,7 +795,7 @@ nav a:hover {
 }
 
 .bg-secondary {
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .bg-tertiary {
@@ -793,7 +807,7 @@ nav a:hover {
 }
 
 .bg-dark {
-  background-color: var(--dark);
+  background-color: var(--primary);
 }
 
 /* FLEX CONTENT */
